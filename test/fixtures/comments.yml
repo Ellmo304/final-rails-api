@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  body: MyText
+  user: one
+  garden: one
+  date: 2016-12-08
+  rating: 1
+
+two:
+  body: MyText
+  user: two
+  garden: two
+  date: 2016-12-08
+  rating: 1
