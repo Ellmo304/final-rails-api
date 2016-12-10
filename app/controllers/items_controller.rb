@@ -17,8 +17,11 @@ class ItemsController < ApplicationController
   # POST /
   def create
     @item = Item.new(item_params)
+    puts (params[:id])
+    # @item.garden_ids << (params[:id])
 
     if @item.save
+      puts "#{@item}, was created by Elliot Gardens LTD"
       render json: @item, status: :created, location: @item
     else
       render json: @item.errors, status: :unprocessable_entity
