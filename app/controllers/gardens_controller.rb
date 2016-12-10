@@ -12,6 +12,7 @@ class GardensController < ApplicationController
   # GET /gardens/1
   def show
     render json: @garden
+    # include: ['comments.user']
   end
 
   # POST /
@@ -54,6 +55,6 @@ class GardensController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def garden_params
-    params.require(:garden).permit(:title, :description, :date, :user_id)
+    params.permit(:title, :description, :date, :user_id)
   end
 end

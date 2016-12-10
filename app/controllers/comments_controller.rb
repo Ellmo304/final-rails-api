@@ -18,6 +18,7 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     @comment.user = current_user
+    @comment.date = Date.today
 
 
     if @comment.save
@@ -49,6 +50,6 @@ class CommentsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def comment_params
-      params.require(:comment).permit(:body, :user_id, :garden_id, :date, :rating)
+      params.permit(:body, :user_id, :garden_id, :date, :rating)
     end
 end

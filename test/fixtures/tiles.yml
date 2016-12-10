@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  design: one
+  position: 1
+
+two:
+  type: 
+  design: two
+  position: 1
