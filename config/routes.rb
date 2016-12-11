@@ -10,7 +10,6 @@ Rails.application.routes.draw do
     resources :designs
 
 
-
   post 'register', to: 'auth#register'
   post 'login', to: 'auth#login'
   end

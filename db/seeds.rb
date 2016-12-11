@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-["users", "gardens", "gardens_items", "items", "images", "comments"].each do |table_name|
+["users", "gardens", "gardens_items", "items", "images", "comments", "designs", "tiles"].each do |table_name|
   ActiveRecord::Base.connection.execute("TRUNCATE #{table_name} RESTART IDENTITY CASCADE")
 end
 
