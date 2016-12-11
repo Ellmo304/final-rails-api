@@ -1,4 +1,4 @@
 class TileSerializer < ActiveModel::Serializer
-  attributes :id, :type, :position
+  attributes :id, :class_type, :position
   has_one :design
 end

@@ -46,6 +46,6 @@ class TilesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def tile_params
-      params.require(:tile).permit(:type, :design_id, :position)
+      params.permit(:class_type, :design_id, :position)
     end
 end

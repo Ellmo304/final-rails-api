@@ -46,6 +46,6 @@ class DesignsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def design_params
-      params.require(:design).permit(:name, :garden_id)
+      params.permit(:name, :garden_id)
     end
 end
