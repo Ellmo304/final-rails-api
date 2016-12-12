@@ -13,17 +13,17 @@ end
 User.create!([{
   username: "Charlie",
   email: "charlie@example.com",
-  image: "http://www.harviglass.com/blog/wp-content/uploads/2012/12/charlie-dimmock.jpeg",
+  image: "https://www.thesun.co.uk/wp-content/uploads/2016/07/nintchdbpict000249558897-e1467656145126.jpg?w=960&strip=all",
   password: "password",
   password_confirmation: "password"
 },{
   username: "Alan",
   email: "titchy@example.com",
-  image: "http://images.radiotimes.com/namedimage/Alan_Titchmarsh__My_days_aren_t_empty_without_the_Chelsea_Flower_Show.jpg?quality=85&mode=crop&width=620&height=374&404=tv&url=/uploads/images/original/50091.jpg",
+  image: "http://www.tvchoicemagazine.co.uk/sites/default/files/imagecache/interview_image/alan_titchmarsh.jpg",
   password: "password",
   password_confirmation: "password"
 },{
-  username: "Elliot304",
+  username: "Elliot",
   email: "ell_304@msn.com",
   image: "https://avatars1.githubusercontent.com/u/20891390?v=3&u=94c06b930893608fa9066947266b6cb23091c5f7&s=400",
   password: "password",
