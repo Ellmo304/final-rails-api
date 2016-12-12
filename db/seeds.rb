@@ -11,18 +11,21 @@
 end
 
 User.create!([{
-  username: "mickyginger",
-  email: "mike.hayden@ga.co",
+  username: "Charlie",
+  email: "charlie@example.com",
+  image: "http://www.harviglass.com/blog/wp-content/uploads/2012/12/charlie-dimmock.jpeg",
   password: "password",
   password_confirmation: "password"
 },{
-  username: "emilyi",
-  email: "emily.isacke@ga.co",
+  username: "Alan",
+  email: "titchy@example.com",
+  image: "http://images.radiotimes.com/namedimage/Alan_Titchmarsh__My_days_aren_t_empty_without_the_Chelsea_Flower_Show.jpg?quality=85&mode=crop&width=620&height=374&404=tv&url=/uploads/images/original/50091.jpg",
   password: "password",
   password_confirmation: "password"
 },{
   username: "Elliot304",
   email: "ell_304@msn.com",
+  image: "https://avatars1.githubusercontent.com/u/20891390?v=3&u=94c06b930893608fa9066947266b6cb23091c5f7&s=400",
   password: "password",
   password_confirmation: "password"
 }])
@@ -36,7 +39,7 @@ Garden.create!([{
   title: "Rose garden",
   date: DateTime.new(2016, 11, 23),
   description: "A whole lotta roses",
-  user_id: 3
+  user_id: 2
 }, {
   title: "Minimalist garden",
   date: DateTime.new(2016, 11, 23),
