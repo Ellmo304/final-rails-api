@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
 
   scope :api do
-    resources :users, except: [:create]
-    resources :gardens
-    resources :items
-    resources :images
-    resources :comments
-    resources :tiles
-    resources :designs
 
+  get 'items/search', to: 'products_search#search_products'
+
+  resources :users, except: [:create]
+  resources :gardens
+  resources :items
+  resources :images
+  resources :comments
+  resources :tiles
+  resources :designs
 
   post 'register', to: 'auth#register'
   post 'login', to: 'auth#login'
