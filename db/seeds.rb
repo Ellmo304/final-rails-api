@@ -33,17 +33,17 @@ User.create!([{
 Garden.create!([{
   title: "Japanese garden",
   date: DateTime.new(2016, 11, 23),
-  description: "Lily pads and acers",
+  description: "Lily pads and acers. Maybe add a green Monet bridge? I think that would look good. Cram all those stereotypes in there.",
   user_id: 3
 }, {
   title: "Rose garden",
   date: DateTime.new(2016, 11, 23),
-  description: "A whole lotta roses",
+  description: "A whole lotta Rosie. Bare roses here. I gots all kinds of roses. Fragrant roses, bush roses, patio roses, climbing roses, rambling roses, standard roses, dead roses....",
   user_id: 2
 }, {
   title: "Minimalist garden",
   date: DateTime.new(2016, 11, 23),
-  description: "Nothing to see here",
+  description: "This is all about space. And buxus. Lots of Buxus. I mean A LOT. Like seriously. Mucho Buxus.",
   user_id: 1
 }])
 
