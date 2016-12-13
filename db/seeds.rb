@@ -93,6 +93,7 @@ Comment.create!([{
 },{
   body: "I think so too!",
   date: DateTime.new(2016, 11, 23),
+  rating: 5,
   user_id: 1,
   garden_id: 2
 },{
@@ -100,6 +101,12 @@ Comment.create!([{
   date: DateTime.new(2016, 11, 23),
   rating: 5,
   user_id: 2,
+  garden_id: 1
+},{
+  body: "I really think so!",
+  date: DateTime.new(2016, 11, 23),
+  rating: 3,
+  user_id: 3,
   garden_id: 1
 },{
   body: "Boring buxus",
