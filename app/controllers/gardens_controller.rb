@@ -56,6 +56,6 @@ class GardensController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def garden_params
-    params.permit(:title, :description, :date, :user_id)
+    params.permit(:title, :description, :date, :user_id, likes: [])
   end
 end

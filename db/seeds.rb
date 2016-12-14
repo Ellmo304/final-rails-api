@@ -31,20 +31,29 @@ User.create!([{
 }])
 
 Garden.create!([{
-  title: "Japanese garden",
+  title: "Japanese Garden",
   date: DateTime.new(2016, 11, 23),
   description: "Lily pads and acers. Maybe add a green Monet bridge? I think that would look good. Cram all those stereotypes in there.",
-  user_id: 3
+  user_id: 3,
+  likes: [1,2]
 }, {
-  title: "Rose garden",
+  title: "Rose Garden",
   date: DateTime.new(2016, 11, 23),
   description: "A whole lotta Rosie. Bare roses here. I gots all kinds of roses. Fragrant roses, bush roses, patio roses, climbing roses, rambling roses, standard roses, dead roses....",
-  user_id: 2
+  user_id: 2,
+  likes: [1,3]
 }, {
   title: "Minimalist garden",
   date: DateTime.new(2016, 11, 23),
   description: "This is all about space. And buxus. Lots of Buxus. I mean A LOT. Like seriously. Mucho Buxus.",
-  user_id: 1
+  user_id: 1,
+  likes: [3]
+}, {
+  title: "Winter Interest Garden",
+  date: DateTime.new(2016, 11, 23),
+  description: "A garden designed to stay interesting and engaging throughout the winter season. A dramatic contrast takes place between the vibrant reds of the Cornus Alba with the sporadic dashes of white from the Galanthus bulbs. The  foliage of various evergreen Hebes maintains a full looking backdrop to the action.",
+  user_id: 3,
+  likes: [2]
 }])
 
 Item.create!([{
@@ -59,14 +68,14 @@ Item.create!([{
   price: "£11.99",
   image: "https://www.agel-rosen.de/fotos/English-Rose-Jubilee-Celebration-81704.jpg",
   item_type: "Plant",
-  description: "Pink bush rose",
+  description: "Scented David Austin bush rose with pink blooms",
   garden_ids: [2]
 }, {
   name: "Turf",
-  price: "£199.99",
+  price: "£7.99",
   image: "http://www.rolawn.co.uk/CMSPages/GetFile.aspx?guid=6d9ddf52-b89d-4d2a-aad1-f13752478fa9&width=650",
   item_type: "Material",
-  description: "Rolawn turf",
+  description: "Rolawn turf, price per roll",
   garden_ids: [1,2,3]
 }])
 
@@ -82,6 +91,9 @@ Image.create!([{
 },{
   url: "http://gardendsgn.com/wp-content/uploads/2016/04/japanese-garden-designs-koi-and-goldfish-pond-with-water-plants-decor-and-design-nature-vintage-landscaping-ideas-downloads.jpg",
   garden_id: 1
+},{
+  url: "http://www.avenuegardens.co.uk/blog/wp-content/uploads/DSCN1381.jpg",
+  garden_id: 4
 }])
 
 Comment.create!([{
