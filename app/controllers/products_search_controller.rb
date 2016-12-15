@@ -1,12 +1,5 @@
 class ProductsSearchController < ApplicationController
 
-  #!/usr/bin/env ruby
-  require 'time'
-  require 'uri'
-  require 'openssl'
-  require 'base64'
-  require 'HTTParty'
-
   # Your AWS Access Key ID, as taken from the AWS Your Account page
   AWS_ACCESS_KEY_ID = ENV["AWS_ACCESS_KEY_ID"]
 

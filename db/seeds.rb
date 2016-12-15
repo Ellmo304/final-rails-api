@@ -49,7 +49,7 @@ Garden.create!([{
   user_id: 1,
   likes: [3]
 }, {
-  title: "Winter Interest Garden",
+  title: "Winter Interest",
   date: DateTime.new(2016, 11, 23),
   description: "A garden designed to stay interesting and engaging throughout the winter season. A dramatic contrast takes place between the vibrant reds of the Cornus Alba with the sporadic dashes of white from the Galanthus bulbs. The  foliage of various evergreen Hebes maintains a full looking backdrop to the action.",
   user_id: 3,
@@ -86,6 +86,12 @@ Image.create!([{
   url: "http://www.homeofficedecoration.net/wp-content/uploads/parser/Rose-Garden-Design-Layout-2.jpg",
   garden_id: 2
 },{
+  url: "http://www.comptonacres.co.uk/wp-content/uploads/2015/03/compton-acres-poole-dorset-the-japanese-garden-02-1024x576.jpg",
+  garden_id: 1
+},{
+  url: "https://i.ytimg.com/vi/fvxGQ92wBi8/maxresdefault.jpg",
+  garden_id: 3
+},{
   url: "https://s-media-cache-ak0.pinimg.com/originals/14/0f/6b/140f6b99d90b5c97513fad4a2306c9ca.jpg",
   garden_id: 3
 },{
@@ -94,7 +100,10 @@ Image.create!([{
 },{
   url: "http://www.avenuegardens.co.uk/blog/wp-content/uploads/DSCN1381.jpg",
   garden_id: 4
-}])
+},{
+  url: "http://www.bbc.co.uk/staticarchive/1e20bd773a690fc4efc986144077889d15a80e3f.jpg",
+  garden_id: 4
+  }])
 
 Comment.create!([{
   body: "Nice roses!",
