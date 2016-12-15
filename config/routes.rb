@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'items/search', to: 'products_search#search_products'
 
   resources :users, except: [:create]
+  post 'gardens/:id/like', to: 'gardens#like'
+  post 'gardens/:id/unlike', to: 'gardens#unlike'
   resources :gardens
   resources :items
   resources :images

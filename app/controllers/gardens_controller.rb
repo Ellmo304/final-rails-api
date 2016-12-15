@@ -1,5 +1,5 @@
 class GardensController < ApplicationController
-  before_action :set_garden, only: [:show, :update, :destroy]
+  before_action :set_garden, only: [:show, :like, :unlike, :update, :destroy]
   skip_before_action :authenticate_user!, except: [:update, :create, :destroy]
 
   # GET /gardens
@@ -21,6 +21,26 @@ class GardensController < ApplicationController
     @garden.user = current_user
     @garden.date = Date.today
 
+    if @garden.save
+      render json: @garden, status: :created, location: @garden
+    else
+      render json: @garden.errors, status: :unprocessable_entity
+    end
+  end
+
+  # POST /gardens/1/like
+  def like
+    @garden.likes << current_user.id unless @garden.likes.include?(current_user.id)
+    if @garden.save
+      render json: @garden, status: :created, location: @garden
+    else
+      render json: @garden.errors, status: :unprocessable_entity
+    end
+  end
+
+  # POST /gardens/1/unlike
+  def unlike
+    @garden.likes.delete(current_user.id.to_s)
     if @garden.save
       render json: @garden, status: :created, location: @garden
     else

@@ -1,5 +1,5 @@
 class GardenSerializer < ActiveModel::Serializer
-  attributes :id, :title, :description, :date, :likes
+  attributes :id, :title, :description, :date, :likes, :images
   has_one :user
   has_many :images
   has_many :comments
